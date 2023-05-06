@@ -1,3 +1,5 @@
+runtime! config/*.vim
+
 "基本設定
 set nocompatible
 set encoding=utf-8
