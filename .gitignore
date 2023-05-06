@@ -1,0 +1,9 @@
+*
+
+# Allow-list
+!/README.md
+!.gitignore
+!.gitkeep
+
+!/.vimrc
+
