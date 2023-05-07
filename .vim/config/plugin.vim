@@ -1,4 +1,4 @@
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
-Jetpack 'colors/onedark.vim'
+Jetpack 'joshdick/onedark.vim'
 call jetpack#end()
