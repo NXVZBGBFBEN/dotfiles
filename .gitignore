@@ -9,5 +9,5 @@
 !/.vim/
 !/.vim/config/
 !/.vim/config/*
-!/.vim/autoload/
-!/.vim/autoload/*
+!/.vim/pack
+!/.vim/pack/**
