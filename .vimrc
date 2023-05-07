@@ -1,12 +1,14 @@
-runtime! config/*.vim
+let g:onedark_hide_endofbuffer=1
+let g:onedark_termcolors=16
+
+runtime! config/plugin.vim
+runtime! config/color.vim
 
 "基本設定
 set nocompatible
 set encoding=utf-8
 scriptencoding
 filetype plugin indent on
-syntax enable
-colorscheme slate
 set number
 set backspace=2
 set clipboard=unnamed,autoselect
