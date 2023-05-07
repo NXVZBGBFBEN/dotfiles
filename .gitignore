@@ -9,5 +9,9 @@
 !/.vim/
 !/.vim/config/
 !/.vim/config/*
-!/.vim/pack
-!/.vim/pack/**
+!/.vim/pack/
+!/.vim/pack/jetpack/
+!/.vim/pack/jetpack/opt/
+!/.vim/pack/jetpack/opt/vim-jetpack/
+!/.vim/pack/jetpack/opt/vim-jetpack/plugin/
+!/.vim/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim
