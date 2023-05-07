@@ -5,7 +5,8 @@
 !.gitignore
 !.gitkeep
 
-!/.vimrc
-!/.vim/
-!/.vim/config/
-!/.vim/config/*
+!/rc/
+!/rc/.vimrc
+!/rc/.vim/
+!/rc/.vim/config/
+!/rc/.vim/config/*
