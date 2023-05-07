@@ -5,6 +5,11 @@
 !.gitignore
 !.gitkeep
 
+!/backup/
+
+!/installer/
+!/installer/**
+
 !/rc/
 !/rc/.vimrc
 !/rc/.vim/
