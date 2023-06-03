@@ -9,7 +9,6 @@ runtime! config/color.vim
 "基本設定
 set encoding=utf-8
 scriptencoding
-filetype plugin indent on
 set number
 set backspace=2
 set clipboard=unnamed,autoselect
@@ -18,7 +17,6 @@ set clipboard=unnamed,autoselect
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set cindent
 
 "検索設定
 set hlsearch
