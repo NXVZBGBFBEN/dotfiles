@@ -4,8 +4,8 @@ let g:onedark_termcolors=16
 set nocompatible
 
 runtime! config/plugin.vim
-runtime! config/color.vim
 runtime! config/style.vim
+runtime! config/color.vim
 
 "基本設定
 set encoding=utf-8
