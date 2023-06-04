@@ -8,5 +8,5 @@ set shiftwidth=4
 
 augroup style
     autocmd!
-    autocmd FileType c setl cindent
+    autocmd FileType c setlocal cindent
 augroup END
