@@ -6,6 +6,7 @@ Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'joshdick/onedark.vim'
 Jetpack 'sheerun/vim-polyglot'
 Jetpack 'tpope/vim-surround'
+Jetpack 'wakatime/vim-wakatime'
 call jetpack#end()
 
 " Automatic plugin installation on startup
