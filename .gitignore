@@ -15,3 +15,5 @@
 !/rc/.vim/
 !/rc/.vim/config/
 !/rc/.vim/config/*
+!/rc/.vim/ftplugin/
+!/rc/.vim/ftplugin/*
