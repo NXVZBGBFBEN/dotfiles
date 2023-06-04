@@ -8,5 +8,5 @@ set shiftwidth=4
 
 augroup style
     autocmd!
-    autocmd FileType c,cpp,java setl cindent
+    autocmd FileType c setl cindent
 augroup END
