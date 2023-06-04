@@ -5,6 +5,7 @@ set nocompatible
 
 runtime! config/plugin.vim
 runtime! config/color.vim
+runtime! config/style.vim
 
 "基本設定
 set encoding=utf-8
@@ -12,11 +13,6 @@ scriptencoding
 set number
 set backspace=2
 set clipboard=unnamed,autoselect
-
-"コードスタイル設定
-set expandtab
-set tabstop=4
-set shiftwidth=4
 
 "検索設定
 set hlsearch
