@@ -17,3 +17,6 @@
 !/rc/.vim/config/*
 !/rc/.vim/ftplugin/
 !/rc/.vim/ftplugin/*
+!/rc/ime/
+!/rc/ime/google/
+!/rc/ime/google/*
