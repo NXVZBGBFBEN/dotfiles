@@ -3,6 +3,7 @@ set nocompatible
 " 外部ファイル読み込み (Vimに怒られる場合はコメントアウト)
 runtime! config/jetpack.vim
 runtime! config/onedark.vim
+runtime! config/lightline.vim
 
 " 基本設定
 set encoding=utf-8
