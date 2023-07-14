@@ -2,7 +2,7 @@ set nocompatible
 
 runtime! config/plugin.vim
 runtime! config/style.vim
-runtime! config/color.vim
+runtime! config/onedark.vim
 
 "基本設定
 set encoding=utf-8
