@@ -13,10 +13,11 @@
 !/rc/
 !/rc/.vimrc
 !/rc/.vim/
+!/rc/.vim/after/
+!/rc/.vim/after/ftplugin/
+!/rc/.vim/after/ftplugin/*
 !/rc/.vim/config/
 !/rc/.vim/config/*
-!/rc/.vim/ftplugin/
-!/rc/.vim/ftplugin/*
 !/rc/ime/
 !/rc/ime/google/
 !/rc/ime/google/*
