@@ -29,6 +29,6 @@ set hlsearch
 set noincsearch
 
 " ステータスバー等設定
-set showcmd
-set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
-set laststatus=2
+" set showcmd
+" set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
+" set laststatus=2
