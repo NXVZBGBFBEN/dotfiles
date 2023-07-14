@@ -30,5 +30,6 @@ set noincsearch
 
 " ステータスバー等設定
 set laststatus=2
+" 外部ファイル読み込み部をコメントアウトした場合は以下を有効化する
 " set showcmd
 " set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
