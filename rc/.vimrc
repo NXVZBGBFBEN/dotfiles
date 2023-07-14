@@ -22,3 +22,6 @@ set noincsearch
 set showcmd
 set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
 set laststatus=2
+
+"viminfoの生成場所
+set viminfo+=n~/.vim/.viminfo
