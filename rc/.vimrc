@@ -1,7 +1,5 @@
 set nocompatible
 
-syntax enable
-
 runtime! config/plugin.vim
 runtime! config/style.vim
 runtime! config/color.vim
@@ -12,6 +10,10 @@ scriptencoding
 set number
 set backspace=2
 set clipboard=unnamed,autoselect
+
+"色設定
+syntax enable
+colorscheme onedark
 
 "検索設定
 set hlsearch
