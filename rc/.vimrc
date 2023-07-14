@@ -1,6 +1,6 @@
 set nocompatible
 
-runtime! config/plugin.vim
+runtime! config/jetpack.vim
 runtime! config/style.vim
 runtime! config/onedark.vim
 
