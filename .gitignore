@@ -12,6 +12,7 @@
 
 !/rc/
 !/rc/.vimrc
+!/rc/.ideavimrc
 !/rc/.vim/
 !/rc/.vim/after/
 !/rc/.vim/after/ftplugin/
