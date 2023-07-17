@@ -11,8 +11,9 @@
 !/installer/**
 
 !/rc/
-!/rc/.vimrc
 !/rc/.ideavimrc
+!/rc/.vimrc
+!/rc/.vscvimrc
 !/rc/.vim/
 !/rc/.vim/after/
 !/rc/.vim/after/ftplugin/
