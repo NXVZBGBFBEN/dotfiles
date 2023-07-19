@@ -1,0 +1,12 @@
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Right> <Nop>
+inoremap <Left> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Down> <Nop>
+vnoremap <Right> <Nop>
+vnoremap <Left> <Nop>
