@@ -2,3 +2,8 @@
     type = "file"
     url = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
     refreshPeriod = "168h"
+
+["vimfiles/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
+    refreshPeriod = "168h"
