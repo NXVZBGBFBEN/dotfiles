@@ -11,7 +11,9 @@ scriptencoding
 set number
 set backspace=2
 set clipboard=unnamed,autoselect
+{{ if eq .chezmoi.os "linux" -}}
 set viminfo+=n~/.vim/.viminfo
+{{ end -}}
 
 " スタイル設定
 filetype plugin indent on
