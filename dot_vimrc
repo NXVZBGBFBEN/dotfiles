@@ -20,6 +20,7 @@ set tabstop=4
 set softtabstop=4
 set shiftround
 set shiftwidth=4
+set nowrap
 
 " 色設定
 syntax enable
