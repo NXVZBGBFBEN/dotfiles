@@ -2,6 +2,8 @@ README.md
 
 {{ if ne .chezmoi.os "linux" }}
 .vimrc
+.bashrc
+.bash_profile
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
