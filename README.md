@@ -1,2 +1,7 @@
 # dotfiles
-設定ファイル管理用
+
+## Getting Started
+
+```console
+$ chezmoi init --apply NXVZBGBFBEN
+```
