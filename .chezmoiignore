@@ -5,6 +5,7 @@ README.md
 .bashrc
 .bash_profile
 .bash_logout
+.inputrc
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
