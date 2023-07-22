@@ -2,6 +2,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$HOME/.local/bin:$VOLTA_HOME/bin:$PATH"
 export EDITOR="vim"
 export STARSHIP_CONFIG="$HOME/.local/etc/starship/config.toml"
+export LANG=en_US.utf-8
 
 if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
