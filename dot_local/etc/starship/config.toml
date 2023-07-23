@@ -22,7 +22,8 @@ symbol = "az "
 symbol = "bun "
 
 [c]
-symbol = "C "
+commands = [[ 'cc', '--version' ]]
+format = '[($name(\($version\))) ]($style)'
 
 [cobol]
 symbol = "cobol "
