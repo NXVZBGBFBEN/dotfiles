@@ -1,4 +1,6 @@
 PS1=$'%n@%m.%l:%//\n%* %(!.#.$) '
+export STARSHIP_CONFIG="$HOME/.local/etc/starship/config.toml"
+eval "$(starship init zsh)"
 
 function man ()
 {
