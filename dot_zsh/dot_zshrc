@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh_histfile
+HISTFILE=$ZDOTDIR/.zsh_histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
@@ -14,4 +14,4 @@ zstyle ':completion:*:default' menu select=1
 ##compinit
 # End of lines added by compinstall
 
-source ~/.zshrc.custom
+source $ZDOTDIR/.zshrc.custom
