@@ -1,3 +1,6 @@
 [user]
 	email = NXVZBGBFBEN@gmail.com
 	name = NXVZBGBFBEN
+[pull]
+	rebase = false
+
