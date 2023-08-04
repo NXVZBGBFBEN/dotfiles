@@ -61,13 +61,6 @@ autoload -Uz compinit && compinit
 ##############################
 
 
-alias cp='\cp -i'
-alias la='\ls -lha --color=auto'
-alias ll='\ls -lh --color=auto'
-alias ls='\ls -v --color=auto'
-alias mv='\mv -i'
-alias rm='\rm -i'
-
 {{ if eq .chezmoi.username "j22401" }}
 alias cc='/home/local/bin/gcc-cp.sh'
 alias gcc='/home/local/bin/gcc-cp.sh'
@@ -83,6 +76,13 @@ function man () {
   LANG=ja_JP.utf8 man -Tutf8 $@ | lv
 }
 {{ end }}
+
+alias cp='\cp -i'
+alias la='\ls -lha --color=auto'
+alias ll='\ls -lh --color=auto'
+alias ls='\ls -v --color=auto'
+alias mv='\mv -i'
+alias rm='\rm -i'
 
 
 ##############################
