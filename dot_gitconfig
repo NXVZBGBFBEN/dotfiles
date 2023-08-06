@@ -1,6 +1,9 @@
 [user]
 	email = NXVZBGBFBEN@gmail.com
 	name = NXVZBGBFBEN
+    signinkey = DF6AE3B6BCDF9429
 [pull]
 	rebase = false
+[core]
+    autocrlf = input
 

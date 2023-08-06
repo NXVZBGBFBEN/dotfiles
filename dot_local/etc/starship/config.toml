@@ -86,6 +86,9 @@ symbol = "guix "
 [hg_branch]
 symbol = "hg "
 
+[hostname]
+ssh_symbol = '[\[SSH\]](blue) '
+
 [java]
 symbol = "java "
 
