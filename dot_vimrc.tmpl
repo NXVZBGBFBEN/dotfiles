@@ -1,9 +1,11 @@
 set nocompatible
 
-" 外部ファイル読み込み (Vimに怒られる場合はコメントアウト)
-runtime! config/jetpack.vim
-runtime! config/onedark.vim
-runtime! config/lightline.vim
+" プラグイン読み込み
+if has('packages')
+    runtime! config/jetpack.vim
+    runtime! config/onedark.vim
+    runtime! config/lightline.vim
+endif
 
 " 基本設定
 set encoding=utf-8
@@ -23,7 +25,11 @@ set nowrap
 
 " 色設定
 syntax enable
-colorscheme onedark  " 外部ファイル読み込み部をコメントアウトした場合は変更する
+if has('packages')
+    colorscheme onedark
+else
+    colorscheme slate
+endif
 
 " 検索設定
 set hlsearch
@@ -32,5 +38,6 @@ set noincsearch
 " ステータスバー等設定
 set laststatus=2
 set showcmd
-" 外部ファイル読み込み部をコメントアウトした場合は以下を有効化する
-" set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
+if !has('packages')
+    set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
+endif
