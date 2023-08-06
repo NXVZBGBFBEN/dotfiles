@@ -5,7 +5,9 @@ if has('packages')
     runtime! config/jetpack.vim
     runtime! config/onedark.vim
     runtime! config/lightline.vim
-    runtime! config/vimsence.vim
+    if has('python3')
+        runtime! config/vimsence.vim
+    endif
 endif
 
 " 基本設定
