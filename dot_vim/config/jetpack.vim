@@ -5,6 +5,7 @@ call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'joshdick/onedark.vim'
 Jetpack 'itchyny/lightline.vim'
+Jetpack 'vimsence/vimsence'
 Jetpack 'sheerun/vim-polyglot'
 Jetpack 'tpope/vim-surround'
 Jetpack 'wakatime/vim-wakatime'
