@@ -13,4 +13,5 @@ README.md
 {{ if ne .chezmoi.os "windows" }}
 vimfiles/
 _vimrc
+Documents/
 {{ end }}
