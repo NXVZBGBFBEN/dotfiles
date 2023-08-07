@@ -122,6 +122,10 @@ symbol = "ml "
 [opa]
 symbol = "opa "
 
+[os]
+format = '[$symbol/ ]($style)'
+disabled = true
+
 [os.symbols]
 Alpaquita = "alq "
 Alpine = "alp "
@@ -197,6 +201,12 @@ symbol = "rs "
 
 [scala]
 symbol = "scala "
+
+[shell]
+bash_indicator = "bash"
+zsh_indicator = "zsh"
+powershell_indicator = "pwsh"
+disabled = false
 
 [spack]
 symbol = "spack "
