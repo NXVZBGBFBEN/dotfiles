@@ -206,7 +206,7 @@ symbol = "scala "
 bash_indicator = "bash"
 zsh_indicator = "zsh"
 powershell_indicator = "pwsh"
-disabled = false
+disabled = true
 
 [spack]
 symbol = "spack "
