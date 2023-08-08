@@ -1,16 +1,5 @@
-set nocompatible
-
-" プラグイン読み込み
-if has('packages')
-    runtime! config/jetpack.vim
-    runtime! config/onedark.vim
-    runtime! config/lightline.vim
-    if has('python3')
-        runtime! config/vimsence.vim
-    endif
-endif
-
 " 基本設定
+set nocompatible
 set encoding=utf-8
 scriptencoding
 set number
@@ -25,6 +14,16 @@ set softtabstop=4
 set shiftround
 set shiftwidth=4
 set nowrap
+
+" プラグイン読み込み
+if has('packages')
+    runtime! config/jetpack.vim
+    runtime! config/onedark.vim
+    runtime! config/lightline.vim
+    if has('python3')
+        runtime! config/vimsence.vim
+    endif
+endif
 
 " 色設定
 syntax enable
