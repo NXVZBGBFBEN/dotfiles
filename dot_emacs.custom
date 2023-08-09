@@ -1,0 +1,83 @@
+(global-font-lock-mode 0)
+
+;;; スプラッシュ・スクリーンを抑制する．
+(setq inhibit-startup-message t)
+
+
+;;; anthy
+
+; japanese-egg-anthy 用．
+; 何故か，load-library よりも前に置かないと有効にならない． 
+(setq its-hira-period "．")
+(setq its-hira-comma  "，")
+;
+; これはjapanese-anthy 用
+;;(anthy-change-hiragana-map "," "，")
+;;(anthy-change-hiragana-map "." "．")
+
+(load-library "anthy")
+;(load-library "egg/anthy")
+;;(setq default-input-method "japanese-egg-anthy")
+;(set-input-method "japanese-egg-anthy")
+;;(set-input-method "japanese-anthy")
+;(toggle-input-method nil)
+
+(setq anthy-candidate-op-count 1)
+(setq anthy-wide-space " ")
+(setq anthy-use-hankaku-kana nil)
+(define-key global-map "\C-o" 'toggle-input-method)
+
+;;; 行番号を表示する
+(line-number-mode t)
+(column-number-mode t)
+
+;;; mule/emacs -nw で起動した時にメニューバーを消す
+(if window-system (menu-bar-mode 1) (menu-bar-mode -1))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; YaTeX 1.64.2
+;;   [La]TeX 入力モード
+;;   M-x yatex とするか、.tex で終わるファイルを読み込むと起動します
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq load-path
+      (append '("/usr/share/emacs/site-lisp/yatex") load-path))
+(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
+
+;; *.tex の拡張子を持つファイルを開いた場合、自動的に Yatex を起動
+(setq auto-mode-alist
+      (cons (cons "\\.tex$" 'yatex-mode)
+	    auto-mode-alist))
+
+(setq c-mode-hook
+  '(lambda ()
+    (setq c-tab-always-indent t)
+    (setq c-imaginary-offset 0)
+    (setq c-indent-level 2)
+    (setq c-continued-statement-offset 2)
+    (setq c-brace-imaginary-offset 0)
+    (setq c-brace-offset -2)
+    (setq c-argdecl-indent 2)
+    (setq c-lavel-offset -2)
+    (setq c-basic-offset 2)
+    ;; 関数のブロックの始まり { の位置設定
+    (c-set-offset 'substatement-open 0)
+))
+
+(setq c++-mode-hook
+  '(lambda ()
+    (setq c-tab-always-indent t)
+    (setq c-imaginary-offset 0)
+    (setq c-indent-level 2)
+    (setq c-continued-statement-offset 2)
+    (setq c-brace-imaginary-offset 0)
+    (setq c-brace-offset -2)
+    (setq c-argdecl-indent 2)
+    (setq c-lavel-offset -2)
+    (setq c-basic-offset 2)
+    ;; 関数のブロックの始まり { の位置設定
+    (c-set-offset 'substatement-open 0)
+))
+
+;; 選択領域の色付けをしない．
+(setq transient-mark-mode nil)
