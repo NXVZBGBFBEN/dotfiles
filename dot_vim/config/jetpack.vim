@@ -3,6 +3,7 @@ packadd vim-jetpack
 " Plugin list
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
+Jetpack 'mattn/emmet-vim'
 Jetpack 'joshdick/onedark.vim'
 Jetpack 'itchyny/lightline.vim'
 Jetpack 'vimsence/vimsence'
