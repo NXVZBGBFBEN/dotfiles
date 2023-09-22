@@ -3,7 +3,9 @@
 [core]
     autocrlf = input
 [gpg]
-	program = gpg
+	{{ if eq .chezmoi.os "windows" -}}
+	program = "{{- lookPath "gpg" | replaceAllRegex "\\\\" "\\\\" -}}"
+	{{- end }}
 [pull]
 	rebase = false
 [tag]
