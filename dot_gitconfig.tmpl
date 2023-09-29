@@ -2,6 +2,7 @@
 	gpgsign = true
 [core]
     autocrlf = input
+	editor = "{{- lookPath "vim" | replace "\\" "/" -}}"
 [gpg]
 	program = "{{- lookPath "gpg" | replace "\\" "/" -}}"
 [pull]
