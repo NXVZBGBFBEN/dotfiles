@@ -24,7 +24,7 @@ symbol = "bun "
 
 [c]
 commands = [[ 'cc', '--version' ]]
-format = '[($name(\($version\))) ]($style)'
+symbol = "cc "
 
 [cobol]
 symbol = "cobol "
