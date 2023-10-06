@@ -4,6 +4,8 @@ packadd vim-jetpack
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'mattn/emmet-vim'
+Jetpack 'junegunn/fzf', {'dir': '$OPT_HOME/fzf', 'do': './install --all'}
+Jetpack 'junegunn/fzf.vim'
 Jetpack 'joshdick/onedark.vim'
 Jetpack 'itchyny/lightline.vim'
 Jetpack 'vimsence/vimsence'
