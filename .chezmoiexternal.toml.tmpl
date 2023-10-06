@@ -9,22 +9,12 @@
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz"
     path = "starship"
     refreshPeriod = "168h"
-[".local/bin/fzf"]
-    type = "archive-file"
-    url = "https://github.com/junegunn/fzf/releases/download/0.42.0/fzf-0.42.0-linux_amd64.tar.gz"
-    path = "fzf"
-    refreshPeriod = "168h"
 
 {{ else if and (eq .chezmoi.os "windows") (eq .chezmoi.arch "amd64") -}}
 [".local/bin/starship.exe"]
     type = "archive-file"
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-pc-windows-msvc.zip"
     path = "starship.exe"
-    refreshPeriod = "168h"
-[".local/bin/fzf.exe"]
-    type = "archive-file"
-    url = "https://github.com/junegunn/fzf/releases/download/0.42.0/fzf-0.42.0-windows_amd64.zip"
-    path = "fzf.exe"
     refreshPeriod = "168h"
 
 {{ end -}}
