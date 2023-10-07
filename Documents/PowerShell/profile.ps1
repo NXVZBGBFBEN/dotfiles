@@ -10,7 +10,7 @@ $env:OPT_HOME = "$HOME\.local\opt"
 ##############################
 
 
-$env:PATH += ";$env:BIN_HOME;$env:OPT_HOME\fzf\bin"
+$env:PATH += ";$env:BIN_HOME"
 $env:EDITOR = "vim"
 
 $env:STARSHIP_CONFIG = "$env:XDG_CONFIG_HOME\starship\config.toml"
