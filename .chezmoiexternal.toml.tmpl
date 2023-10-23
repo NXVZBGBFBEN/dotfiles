@@ -2,6 +2,12 @@
     type = "file"
     url = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
     refreshPeriod = "168h"
+[".local/share/skk/dict/SKK-JISYO.L"]
+    type = "file"
+    url = "https://skk-dev.github.io/dict/SKK-JISYO.L.gz"
+    refreshPeriod = "168h"
+    filter.command = "gzip"
+    filter.args = ["-d"]
 
 {{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64") -}}
 [".local/bin/starship"]
