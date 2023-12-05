@@ -12,6 +12,7 @@ Jetpack 'vimsence/vimsence'
 Jetpack 'prabirshrestha/vim-lsp'
 Jetpack 'mattn/vim-lsp-settings'
 Jetpack 'sheerun/vim-polyglot'
+Jetpack 'sophacles/vim-processing'
 Jetpack 'tpope/vim-surround'
 Jetpack 'wakatime/vim-wakatime'
 call jetpack#end()
