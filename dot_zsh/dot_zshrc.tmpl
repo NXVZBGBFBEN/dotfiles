@@ -13,8 +13,9 @@ SAVEHIST=1000
 
 ##############################
 
+export WASMTIME_HOME="$HOME/.wasmtime"
 
-export PATH="$BIN_HOME:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$PATH"
+export PATH="$BIN_HOME:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:WASMTIME_HOME/bin:$PATH"
 export VISUAL=vim  # ='emacs -nw'
 export EDITOR=vim
 export PAGER=vimpager
