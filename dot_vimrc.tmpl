@@ -17,7 +17,7 @@ set shiftwidth=4
 set nowrap
 set signcolumn=yes
 
-" プラグイン読み込み
+" プラグイン設定読み込み
 if has('packages')
     runtime! config/jetpack.vim
     runtime! config/onedark.vim
@@ -25,6 +25,7 @@ if has('packages')
     if has('python3')
         runtime! config/vimsence.vim
     endif
+    runtime! config/coc.vim
 endif
 
 " 色設定
