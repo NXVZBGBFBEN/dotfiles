@@ -1,4 +1,4 @@
-(global-font-lock-mode 0)
+;(global-font-lock-mode 0)
 
 ;;; スプラッシュ・スクリーンを抑制する．
 (setq inhibit-startup-message t)

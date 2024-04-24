@@ -29,6 +29,6 @@
 ;; Deleteキーでカーソル位置の文字が消えるようにする
 (global-set-key [delete] 'delete-char)
 
-(load (expand-file-name "~/.emacs.custom") nil t nil)
+(load (expand-file-name "~/.emacs.d/.emacs.custom") nil t nil)
 
 ; ---- language-env end DON'T MODIFY THIS LINE!
