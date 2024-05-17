@@ -91,10 +91,6 @@ do
   aname=$(echo $line | cut -d'=' -f1)
   unalias $aname
 done
-
-function man () {
-  LANG=ja_JP.utf8 man -Tutf8 $@ | lv
-}
 {{ end }}
 
 alias cp='\cp -i'
