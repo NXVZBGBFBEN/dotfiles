@@ -1,7 +1,6 @@
 README.md
 
 {{ if eq .chezmoi.os "windows" }}
-.vimrc
 .bashrc
 .bash_profile
 .bash_logout
@@ -12,7 +11,6 @@ README.md
 
 {{ if eq .chezmoi.os "linux" }}
 vimfiles/
-_vimrc
 AppData/
 Documents/
 {{ end }}
