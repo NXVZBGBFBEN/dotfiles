@@ -7,6 +7,9 @@ set relativenumber
 set backspace=2
 set clipboard=unnamed,autoselect
 set updatetime=300
+{{- if eq .chezmoi.os "windows" }}
+set shell=pwsh
+{{- end }}
 
 " スタイル設定
 filetype plugin indent on
@@ -19,7 +22,9 @@ set nowrap
 set signcolumn=yes
 set listchars=tab:<->,space:-,multispace:---\|
 set list
+{{- if eq .chezmoi.os "windows" }}
 set guifont=Myrica\ M:h12
+{{- end }}
 
 " プラグイン設定読み込み
 if has('packages')
