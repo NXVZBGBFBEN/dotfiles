@@ -11,7 +11,7 @@ $env:OPT_HOME = "$HOME\.local\opt"
 
 
 $env:PATH += ";$env:BIN_HOME"
-$env:SHELL = pwsh
+$env:SHELL = "{{- lookPath "pwsh" -}}"
 $env:EDITOR = "{{- lookPath "vim" -}}"
 
 $env:STARSHIP_CONFIG = "$env:XDG_CONFIG_HOME\starship\config.toml"
