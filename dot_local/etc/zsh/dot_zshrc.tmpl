@@ -15,6 +15,10 @@ SAVEHIST=1000
 
 export VOLTA_HOME="$OPT_HOME/volta"
 export WASMTIME_HOME="$HOME/.wasmtime"
+export RUSTUP_HOME="$OPT_HOME/rustup"
+export CARGO_HOME="$OPT_HOME/cargo"
+
+export BIN_HOME="$CARGO_HOME/bin:$BIN_HOME"
 
 export PATH="$BIN_HOME:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$VOLTA_HOME/bin:$WASMTIME_HOME/bin:$PATH"
 export VISUAL=vim  # ='emacs -nw'
