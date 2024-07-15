@@ -1,26 +1,12 @@
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CONFIG_HOME="$HOME/.local/etc"
-export XDG_STATE_HOME="$HOME/.local/var/lib"
-export XDG_CACHE_HOME="$HOME/.local/var/cache"
-
-export BIN_HOME="$HOME/.local/bin"
-export OPT_HOME="$HOME/.local/opt"
-
 HISTFILE=$XDG_STATE_HOME/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-
 ##############################
 
-export VOLTA_HOME="$OPT_HOME/volta"
 export WASMTIME_HOME="$HOME/.wasmtime"
-export RUSTUP_HOME="$OPT_HOME/rustup"
-export CARGO_HOME="$OPT_HOME/cargo"
 
-export BIN_HOME="$CARGO_HOME/bin:$BIN_HOME"
-
-export PATH="$BIN_HOME:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$VOLTA_HOME/bin:$WASMTIME_HOME/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$WASMTIME_HOME/bin:$PATH"
 export VISUAL=vim  # ='emacs -nw'
 export EDITOR=vim
 export PAGER=vimpager

@@ -1,10 +1,4 @@
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CONFIG_HOME="$HOME/.local/etc"
-export XDG_STATE_HOME="$HOME/.local/var/lib"
-export XDG_CACHE_HOME="$HOME/.local/var/cache"
-
-export BIN_HOME="$HOME/.local/bin"
-export OPT_HOME="$HOME/.local/opt"
+. $HOME/.local/etc/nxvzbgbfben/shell/set_environment_variables.sh
 
 export VOLTA_HOME="$HOME/.volta"
 export STARSHIP_CONFIG="$HOME/.local/etc/starship/config.toml"
