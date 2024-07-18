@@ -7,6 +7,7 @@ export BIN_HOME="$HOME/.local/bin"
 export OPT_HOME="$HOME/.local/opt"
 
 export CARGO_HOME="$OPT_HOME/cargo"
+export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 export RUSTUP_HOME="$OPT_HOME/rustup"
 
 export BIN_HOME="$CARGO_HOME/bin:$BIN_HOME"
