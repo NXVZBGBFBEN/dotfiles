@@ -11,4 +11,4 @@ export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 export RUSTUP_HOME="$OPT_HOME/rustup"
 
 export BIN_HOME="$CARGO_HOME/bin:$BIN_HOME"
-export PATH="$BIN_HOME:$PATH"
+export PATH="$PNPM_HOME:$BIN_HOME:$PATH"
