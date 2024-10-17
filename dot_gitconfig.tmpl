@@ -1,20 +1,19 @@
 [commit]
-	gpgsign = true
+    gpgsign = true
 [core]
     autocrlf = input
-	editor = "{{- lookPath "vim" | replace "\\" "/" -}}"
+    editor = "{{- lookPath "vim" | replace "\\" "/" -}}"
 [gpg]
-	program = "{{- lookPath "gpg" | replace "\\" "/" -}}"
+    program = "{{- lookPath "gpg" | replace "\\" "/" -}}"
 [pull]
-	rebase = false
+    rebase = false
 [tag]
-	gpgsign = true
+    gpgsign = true
 [user]
-	email = nxvzbgbfben@gmail.com
-	name = NXVZBGBFBEN
+    email = nxvzbgbfben@gmail.com
+    name = NXVZBGBFBEN
     signinkey = DF6AE3B6BCDF9429
 [credential]
-	helper = manager
-	credentialStore = cache
+    helper = manager
 [credential "https://dev.azure.com"]
-	useHttpPath = true
+    useHttpPath = true
