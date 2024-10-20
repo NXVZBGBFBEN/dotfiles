@@ -13,3 +13,7 @@ export WASMTIME_HOME="$OPT_HOME/wasmtime"
 
 export BIN_HOME="$CARGO_HOME/bin:$WASMTIME_HOME/bin:$BIN_HOME"
 export PATH="$PNPM_HOME:$BIN_HOME:$PATH"
+
+{{ if lookPath "gpgconf" -}}
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+{{ end -}}
