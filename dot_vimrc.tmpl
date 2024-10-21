@@ -30,7 +30,6 @@ set guifont=Myrica\ M:h12
 if has('packages')
     runtime! config/jetpack.vim
     runtime! config/onedark.vim
-    runtime! config/lightline.vim
     if has('python3')
         runtime! config/vimsence.vim
     endif
@@ -49,9 +48,15 @@ endif
 set hlsearch
 set noincsearch
 
-" ステータスバー等設定
+" statusline
 set laststatus=2
 set showcmd
-if !has('packages')
+if has('packages')
+    set noshowmode
+    let g:lightline = {
+        \ 'colorscheme': 'onedark',
+        \ }
+    packadd! lightline.vim
+else
     set statusline=%F%m%h%w%=[%l:%02v][%Y][%{&fileformat}][%{&fileencoding}]
 endif

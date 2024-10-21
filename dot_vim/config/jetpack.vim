@@ -8,7 +8,6 @@ Jetpack 'mattn/emmet-vim'
 Jetpack 'junegunn/fzf', {'dir': '$OPT_HOME/fzf', 'do': './install --bin --xdg'}
 Jetpack 'junegunn/fzf.vim'
 Jetpack 'joshdick/onedark.vim'
-Jetpack 'itchyny/lightline.vim'
 Jetpack 'vimsence/vimsence'
 Jetpack 'airblade/vim-gitgutter'
 Jetpack 'sheerun/vim-polyglot'
