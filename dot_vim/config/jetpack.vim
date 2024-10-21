@@ -7,7 +7,6 @@ Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
 Jetpack 'mattn/emmet-vim'
 Jetpack 'junegunn/fzf', {'dir': '$OPT_HOME/fzf', 'do': './install --bin --xdg'}
 Jetpack 'junegunn/fzf.vim'
-Jetpack 'joshdick/onedark.vim'
 Jetpack 'vimsence/vimsence'
 Jetpack 'airblade/vim-gitgutter'
 Jetpack 'sheerun/vim-polyglot'
@@ -23,5 +22,3 @@ for name in jetpack#names()
     break
   endif
 endfor
-
-packadd! onedark.vim
