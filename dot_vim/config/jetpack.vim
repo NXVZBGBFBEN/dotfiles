@@ -9,7 +9,6 @@ Jetpack 'junegunn/fzf', {'dir': '$OPT_HOME/fzf', 'do': './install --bin --xdg'}
 Jetpack 'junegunn/fzf.vim'
 Jetpack 'vimsence/vimsence'
 Jetpack 'airblade/vim-gitgutter'
-Jetpack 'sheerun/vim-polyglot'
 Jetpack 'sophacles/vim-processing'
 call jetpack#end()
 
