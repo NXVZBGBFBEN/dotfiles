@@ -2,10 +2,4 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-if [[ -d $OPT_HOME/fzf ]]; then
-  PATH="$OPT_HOME/fzf/bin:$PATH"
-  source "$OPT_HOME/fzf/shell/completion.bash"
-  source "$OPT_HOME/fzf/shell/key-bindings.bash"
-fi
-
 eval "$(starship init bash)"

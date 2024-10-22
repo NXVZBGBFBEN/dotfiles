@@ -4,8 +4,6 @@ packadd vim-jetpack
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
-Jetpack 'junegunn/fzf', {'dir': '$OPT_HOME/fzf', 'do': './install --bin --xdg'}
-Jetpack 'junegunn/fzf.vim'
 Jetpack 'vimsence/vimsence'
 Jetpack 'airblade/vim-gitgutter'
 Jetpack 'sophacles/vim-processing'
