@@ -32,10 +32,14 @@ if has('packages')
     packadd! vim-gitgutter
     packadd! vim-surround
     packadd! vim-wakatime
-    runtime! config/jetpack.vim
     if has('python3')
-        runtime! config/vimsence.vim
+        let g:vimsence_small_text = 'Vim'
+        let g:vimsence_small_image = 'vim'
+        let g:vimsence_editing_details = 'Editing: {}'
+        let g:vimsence_editing_state = 'Working on: {}'
+        packadd! vimsence
     endif
+    runtime! config/jetpack.vim
     runtime! config/coc.vim
 endif
 

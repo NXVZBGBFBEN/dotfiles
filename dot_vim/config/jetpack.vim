@@ -4,7 +4,6 @@ packadd vim-jetpack
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
-Jetpack 'vimsence/vimsence'
 Jetpack 'sophacles/vim-processing'
 call jetpack#end()
 
