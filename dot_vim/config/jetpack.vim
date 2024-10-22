@@ -3,7 +3,6 @@ packadd vim-jetpack
 " Plugin list
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
-Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
 call jetpack#end()
 
 " Automatic plugin installation on startup

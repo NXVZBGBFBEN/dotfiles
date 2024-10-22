@@ -25,6 +25,11 @@
 {{ end -}}
 
 # Vim packages
+[".vim/pack/chezmoi/opt/coc.nvim"]
+    type = "git-repo"
+    url = "https://github.com/neoclide/coc.nvim.git"
+    refreshPeriod = "168h"
+    clone.args = ["-b", "release"]
 [".vim/pack/chezmoi/opt/emmet-vim"]
     type = "git-repo"
     url = "https://github.com/mattn/emmet-vim.git"
