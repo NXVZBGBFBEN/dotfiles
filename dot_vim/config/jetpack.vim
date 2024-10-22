@@ -11,7 +11,6 @@ Jetpack 'vimsence/vimsence'
 Jetpack 'airblade/vim-gitgutter'
 Jetpack 'sheerun/vim-polyglot'
 Jetpack 'sophacles/vim-processing'
-Jetpack 'tpope/vim-surround'
 Jetpack 'wakatime/vim-wakatime'
 call jetpack#end()
 
