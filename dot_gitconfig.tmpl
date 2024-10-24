@@ -15,5 +15,8 @@
     signinkey = DF6AE3B6BCDF9429
 [credential]
     helper = manager
+    {{- if eq .chezmoi.os "linux" }}
+    credentialStore = cache
+    {{- end }}
 [credential "https://dev.azure.com"]
     useHttpPath = true
