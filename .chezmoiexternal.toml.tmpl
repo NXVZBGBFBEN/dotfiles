@@ -4,11 +4,6 @@
     url = "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz"
     path = "starship"
     refreshPeriod = "168h"
-[".local/opt/git-credential-manager"]
-    type = "archive"
-    url = "https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.4.1/gcm-linux_amd64.2.4.1.tar.gz"
-    exclude = ["NOTICE"]
-    refreshPeriod = "168h"
 
 {{ else if and (eq .chezmoi.os "windows") (eq .chezmoi.arch "amd64") -}}
 [".local/bin/starship.exe"]

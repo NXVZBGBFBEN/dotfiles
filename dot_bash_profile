@@ -4,8 +4,6 @@ export VOLTA_HOME="$HOME/.volta"
 export STARSHIP_CONFIG="$HOME/.local/etc/starship/config.toml"
 export WAKATIME_HOME="$HOME/.local/opt/wakatime"
 
-export PATH="$OPT_HOME/git-credential-manager:$BIN_HOME:$VOLTA_HOME/bin:$PATH"
-
 export EDITOR="vim"
 export GPG_TTY=$(tty)
 
