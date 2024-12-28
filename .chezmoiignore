@@ -1,5 +1,9 @@
 README.md
 
+{{ if ne .chezmoi.os "windows" }}
+/AppData/
+{{ end }}
+
 {{ if eq .chezmoi.os "windows" }}
 .bashrc
 .bash_profile
@@ -10,7 +14,6 @@ README.md
 {{ end }}
 
 {{ if eq .chezmoi.os "linux" }}
-/AppData/
 vimfiles/
 Documents/
 {{ end }}
