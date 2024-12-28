@@ -10,7 +10,7 @@ README.md
 {{ end }}
 
 {{ if eq .chezmoi.os "linux" }}
+/AppData/
 vimfiles/
-AppData/
 Documents/
 {{ end }}
