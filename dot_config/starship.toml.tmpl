@@ -12,15 +12,15 @@ ssh_symbol = ' [\[*\]](blue)'
 format = '[$hostname$ssh_symbol]($style)'
 
 [username]
-format = ' [:](bold white) [$user]($style)'
+format = ' [-](bold white) [$user]($style)'
 show_always = true
 
 [directory]
-format = ' [:](bold white) [$path]($style)[$read_only]($read_only_style)'
+format = ' [-](bold white) [$path]($style)[$read_only]($read_only_style)'
 read_only = ' [R]'
 
 [git_branch]
-format = ' [:](bold white) [$symbol$branch(:$remote_branch)]($style)'
+format = ' [-](bold white) [$symbol$branch(:$remote_branch)]($style)'
 symbol = 'git '
 
 [git_commit]
