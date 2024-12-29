@@ -1,234 +1,55 @@
-[character]
-success_symbol = "[>](bold green)"
-error_symbol = "[>](bold red)"
-vimcmd_symbol = "[<](bold green)"
-
-[git_commit]
-tag_symbol = " tag "
-
-[git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
-
-[aws]
-symbol = "aws "
-
-[azure]
-symbol = "az "
-
-[battery]
-disabled = true
-
-[bun]
-symbol = "bun "
-
-[c]
-commands = [[ 'cc', '--version' ]]
-symbol = "cc "
-
-[cobol]
-symbol = "cobol "
-
-[conda]
-symbol = "conda "
-
-[crystal]
-symbol = "cr "
-
-[cmake]
-symbol = "cmake "
-
-[daml]
-symbol = "daml "
-
-[dart]
-symbol = "dart "
-
-[deno]
-symbol = "deno "
-
-[dotnet]
-symbol = ".NET "
-
-[directory]
-read_only = " R"
-
-[docker_context]
-symbol = "docker "
-
-[elixir]
-symbol = "exs "
-
-[elm]
-symbol = "elm "
-
-[fennel]
-symbol = "fnl "
-
-[fossil_branch]
-symbol = "fossil "
-
-[gcloud]
-symbol = "gcp "
-
-[git_branch]
-symbol = "git "
-
-[golang]
-symbol = "go "
-
-[gradle]
-symbol = "gradle "
-
-[guix_shell]
-symbol = "guix "
-
-[hg_branch]
-symbol = "hg "
+format = """
+$hostname$username$directory\
+$git_branch$git_commit$git_state$git_status\
+$cmd_duration$status\
+$line_break\
+$character\
+"""
 
 [hostname]
-ssh_symbol = '[\[SSH\]](blue) '
+ssh_only = false
+ssh_symbol = ' [\[*\]](blue)'
+format = '[$hostname$ssh_symbol]($style)'
 
-[java]
-symbol = "java "
+[username]
+format = ' [:](bold white) [$user]($style)'
+show_always = true
 
-[julia]
-symbol = "jl "
+[directory]
+format = ' [:](bold white) [$path]($style)[$read_only]($read_only_style)'
+read_only = ' [R]'
 
-[kotlin]
-symbol = "kt "
+[git_branch]
+format = ' [:](bold white) [$symbol$branch(:$remote_branch)]($style)'
+symbol = 'git '
 
-[lua]
-symbol = "lua "
+[git_commit]
+format = ' [\($hash$tag\)]($style)'
+tag_symbol = ' tag '
 
-[nodejs]
-symbol = "node "
+[git_state]
+format = ' \([$state($progress_current/$progress_total)]($style)\)'
 
-[memory_usage]
-symbol = "memory "
+[git_status]
+format = ' ([\[$all_status$ahead_behind\]]($style))'
+ahead = '>'
+behind = '<'
+diverged = '<>'
+renamed = 'r'
+deleted = 'x'
+style = 'red'
 
-[meson]
-symbol = "meson "
-
-[nim]
-symbol = "nim "
-
-[nix_shell]
-symbol = "nix "
-
-[ocaml]
-symbol = "ml "
-
-[opa]
-symbol = "opa "
-
-[os]
-format = '[$symbol/ ]($style)'
-disabled = true
-
-[os.symbols]
-Alpaquita = "alq "
-Alpine = "alp "
-Amazon = "amz "
-Android = "andr "
-Arch = "rch "
-Artix = "atx "
-CentOS = "cent "
-Debian = "deb "
-DragonFly = "dfbsd "
-Emscripten = "emsc "
-EndeavourOS = "ndev "
-Fedora = "fed "
-FreeBSD = "fbsd "
-Garuda = "garu "
-Gentoo = "gent "
-HardenedBSD = "hbsd "
-Illumos = "lum "
-Linux = "lnx "
-Mabox = "mbox "
-Macos = "mac "
-Manjaro = "mjo "
-Mariner = "mrn "
-MidnightBSD = "mid "
-Mint = "mint "
-NetBSD = "nbsd "
-NixOS = "nix "
-OpenBSD = "obsd "
-OpenCloudOS = "ocos "
-openEuler = "oeul "
-openSUSE = "osuse "
-OracleLinux = "orac "
-Pop = "pop "
-Raspbian = "rasp "
-Redhat = "rhl "
-RedHatEnterprise = "rhel "
-Redox = "redox "
-Solus = "sol "
-SUSE = "suse "
-Ubuntu = "ubnt "
-Unknown = "unk "
-Windows = "win "
-
-[package]
-symbol = "pkg "
-
-[perl]
-symbol = "pl "
-
-[php]
-symbol = "php "
-
-[pijul_channel]
-symbol = "pijul "
-
-[pulumi]
-symbol = "pulumi "
-
-[purescript]
-symbol = "purs "
-
-[python]
-symbol = "py "
-
-[raku]
-symbol = "raku "
-
-[ruby]
-symbol = "rb "
-
-[rust]
-symbol = "rs "
-
-[scala]
-symbol = "scala "
-
-[shell]
-bash_indicator = "bash"
-zsh_indicator = "zsh"
-powershell_indicator = "pwsh"
-disabled = true
-
-[spack]
-symbol = "spack "
-
-[solidity]
-symbol = "solidity "
+[cmd_duration]
+format = ' [-](bold white) [$duration]($style)'
 
 [status]
-symbol = "[x](bold red) "
+format = ' [-](bold white) [$status]($style)'
+disabled = false
 
-[sudo]
-symbol = "sudo "
-
-[swift]
-symbol = "swift "
-
-[terraform]
-symbol = "terraform "
-
-[zig]
-symbol = "zig "
-
+[character]
+success_symbol = '[>](bold blue)'
+error_symbol = '[>](bold blue)'
+vimcmd_symbol = '[<](bold green)'
+vimcmd_replace_one_symbol = '[<](bold red)'
+vimcmd_replace_symbol = '[<](bold red)'
+vimcmd_visual_symbol = '[<](bold purple)'
