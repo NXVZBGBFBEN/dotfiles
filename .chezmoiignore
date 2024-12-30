@@ -2,6 +2,7 @@ README.md
 
 {{ if ne .chezmoi.os "windows" }}
 /AppData/
+/Documents/
 {{ end }}
 
 {{ if eq .chezmoi.os "windows" }}
@@ -15,5 +16,4 @@ README.md
 
 {{ if eq .chezmoi.os "linux" }}
 vimfiles/
-Documents/
 {{ end }}
