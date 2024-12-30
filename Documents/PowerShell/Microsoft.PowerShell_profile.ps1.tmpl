@@ -1,0 +1,4 @@
+$Env:BIN_HOME = "$HOME\.local\bin"
+$Env:PATH += ";$Env:BIN_HOME"
+
+Invoke-Expression (&starship init powershell)
