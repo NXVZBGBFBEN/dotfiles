@@ -43,4 +43,6 @@ cyan = "0x56b6c2"
 white = "0xabb2bf"
 
 [terminal]
+{{- if eq .chezmoi.os "windows" }}
 shell = "pwsh"
+{{- end }}
