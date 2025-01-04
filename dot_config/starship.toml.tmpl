@@ -1,49 +1,51 @@
 format = """
-$hostname$username$directory\
-$git_branch$git_commit$git_state$git_status\
-$cmd_duration$status\
-$line_break\
+$username[@](white)$hostname[:](white)$directory\
+$git_branch$git_status$cmd_duration$status
 $character\
 """
 
-[hostname]
-ssh_only = false
-ssh_symbol = ' [\[*\]](blue)'
-format = '[$hostname$ssh_symbol]($style)'
-
 [username]
-format = ' [-](bold white) [$user]($style)'
+style_root = ''
+style_user = 'white'
+format = '[$user]($style)'
 show_always = true
 
+[hostname]
+ssh_only = false
+format = '[$hostname]($style)'
+style = 'white'
+
 [directory]
-format = ' [-](bold white) [$path]($style)[$read_only]($read_only_style)'
-read_only = ' [R]'
+format = '[$path]($style)'
+style = 'blue'
 
 [git_branch]
-format = ' [-](bold white) [$symbol$branch(:$remote_branch)]($style)'
-symbol = 'git '
-
-[git_commit]
-format = ' [\($hash$tag\)]($style)'
-tag_symbol = ' tag '
-
-[git_state]
-format = ' \([$state($progress_current/$progress_total)]($style)\)'
+format = ' [$branch(:$remote_branch)]($style)'
+style = 'white'
 
 [git_status]
-format = ' ([\[$all_status$ahead_behind\]]($style))'
+format = ' [($untracked$modified$typechanged$deleted$renamed$staged )($conflicted$stashed )$ahead_behind]($style)'
+conflicted = '='
 ahead = '>'
 behind = '<'
 diverged = '<>'
-renamed = 'r'
-deleted = 'x'
-style = 'red'
+up_to_date = '|'
+untracked = '*'
+stashed = '\$'
+modified = 'M'
+staged = '+'
+renamed = 'R'
+deleted = 'D'
+typechanged = 'T'
+style = 'purple'
 
 [cmd_duration]
-format = ' [-](bold white) [$duration]($style)'
+format = ' [$duration]($style)'
+style = 'yellow'
 
 [status]
-format = ' [-](bold white) [$status]($style)'
+format = ' [$status]($style)'
+style = 'red'
 disabled = false
 
 [character]
