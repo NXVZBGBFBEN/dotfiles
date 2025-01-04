@@ -1,0 +1,8 @@
+export BIN_HOME="$HOME/.local/bin"
+export PATH="$BIN_HOME:$PATH"
+
+export PAGER='less'
+
+{{ if lookPath "gpgconf" -}}
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+{{ end -}}
