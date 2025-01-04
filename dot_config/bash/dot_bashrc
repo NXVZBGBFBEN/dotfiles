@@ -1,0 +1,10 @@
+source $HOME/.local/etc/nxvzbgbfben/shell/set_environment_variables.sh
+
+export EDITOR="vim"
+export GPG_TTY=$(tty)
+
+if [[ $- != *i* ]] ; then
+	return
+fi
+
+eval "$(starship init bash)"
