@@ -10,8 +10,6 @@ README.md
 .bash_profile
 .bash_logout
 .inputrc
-.zshenv
-.zsh/
 {{ end }}
 
 {{ if eq .chezmoi.os "linux" }}
