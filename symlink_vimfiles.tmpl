@@ -1,1 +1,3 @@
-.vim/
+{{- if eq .chezmoi.os "windows" }}
+{{ .chezmoi.homeDir }}/.vim/
+{{- end }}

@@ -4,14 +4,3 @@ README.md
 /AppData/
 /Documents/
 {{ end }}
-
-{{ if eq .chezmoi.os "windows" }}
-.bashrc
-.bash_profile
-.bash_logout
-.inputrc
-{{ end }}
-
-{{ if eq .chezmoi.os "linux" }}
-vimfiles/
-{{ end }}
