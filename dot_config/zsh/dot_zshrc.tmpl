@@ -1,4 +1,5 @@
 source {{ .chezmoi.homeDir }}/.config/nxvzbgbfben/shell/set_environment_variables.sh
+source {{ .chezmoi.homeDir }}/.config/nxvzbgbfben/shell/set_aliases.sh
 
 setopt share_history
 setopt extended_history
@@ -10,29 +11,6 @@ eval "$(starship init zsh)"
 zstyle ':completion:*:default' menu select=1
 
 autoload -Uz compinit && compinit
-
-{{ if eq .chezmoi.username "j22401" }}
-alias cc='/home/local/bin/gcc-cp.sh'
-alias gcc='/home/local/bin/gcc-cp.sh'
-
-alias |\
-while read line
-do
-  aname=$(echo $line | cut -d'=' -f1)
-  unalias $aname
-done
-{{ end }}
-
-alias cp='\cp -i'
-alias la='\ls -lha --color=auto'
-alias ll='\ls -lh --color=auto'
-alias ls='\ls -v --color=auto'
-alias mv='\mv -i'
-alias rm='\rm -i'
-
-
-##############################
-
 
 if [[ -f "$ZDOTDIR/.zshrc.custom" ]]; then
     source "$ZDOTDIR/.zshrc.custom"

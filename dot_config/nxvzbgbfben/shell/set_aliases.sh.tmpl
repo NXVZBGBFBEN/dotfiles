@@ -1,0 +1,11 @@
+alias cp='\cp --interactive'
+alias la='\ls --all --color -l -v'
+alias ll='\ls --color -l -v'
+alias ls='\ls --color -v'
+alias mv='\mv --interactive'
+alias rm='\rm --interactive'
+
+{{- if eq .chezmoi.username "j22401" }}
+alias cc='/home/local/bin/gcc-cp.sh'
+alias gcc='/home/local/bin/gcc-cp.sh'
+{{- end }}
