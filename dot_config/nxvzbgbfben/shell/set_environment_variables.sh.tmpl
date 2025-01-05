@@ -1,8 +1,39 @@
 export BIN_HOME="$HOME/.local/bin"
 export PATH="$BIN_HOME:$PATH"
 
+export VISUAL='vim'
+export EDITOR='vim'
 export PAGER='less'
+export GPG_TTY="$(tty)"
 
-{{ if lookPath "gpgconf" -}}
+{{- if lookPath "gpgconf" }}
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-{{ end -}}
+{{- end }}
+
+{{- if eq .chezmoi.username "j22401" }}
+export TMPDIR=/tmp
+
+export G_FILENAME_ENCODING=utf-8
+export OUTPUT_CHARSET=utf-8
+export JLESSCHARSET=utf-8  # =japanese-euc
+
+export ACRO_DISABLE_FONT_CONFIG=1
+
+export LV="-Ou8 -c"  # =-Oej
+
+export XMODIFIERS=@im=fcitx  # =@im=SCIM
+export XIM=fcitx
+export XIM_PROGRAM=fcitx
+export XIM_ARGS="--xim"
+
+export GTK_IM_MODULE=fcitx  # =scim
+# export UIM_IM_ENGINE=anthy
+
+export ORGANIZATION="National Institute of Technology, Kisarazu College"
+export HOST=$(hostname)
+export LANG=ja_JP.UTF-8  # =ja_JP.eucJP
+export LANGUAGE="ja_JP:ja:en_GB:en"
+export NNTPSERVER=localhost
+
+export TEXINPUTS=".//:$HOME/lib/tex/macros//:/usr/share/texlive//:/usr/share/texmf//"
+{{- end }}
