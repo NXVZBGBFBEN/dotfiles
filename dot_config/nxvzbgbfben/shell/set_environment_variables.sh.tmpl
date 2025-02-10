@@ -10,6 +10,10 @@ export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 {{- end }}
 
+{{- if ne .chezmoi.username "j22401" }}
+export DISPLAY=':0'
+{{- end }}
+
 {{- if eq .chezmoi.username "j22401" }}
 export TMPDIR=/tmp
 
