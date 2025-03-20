@@ -18,5 +18,6 @@
     {{- if eq .chezmoi.os "linux" }}
     credentialStore = cache
     {{- end }}
+    guiPrompt = false
 [credential "https://dev.azure.com"]
     useHttpPath = true
