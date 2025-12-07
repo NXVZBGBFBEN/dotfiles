@@ -49,19 +49,7 @@ if has('packages')
     packadd! emmet-vim
     packadd! lexima.vim
     packadd! vim-gitgutter
-    packadd! vim-lsp
-    packadd! vim-lsp-settings
     packadd! vim-surround
-endif
-
-" asyncomplete.vim
-if has('packages')
-    packadd! asyncomplete.vim
-    packadd! asyncomplete-lsp.vim
-
-    inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-    inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 endif
 
 " onedark.vim
