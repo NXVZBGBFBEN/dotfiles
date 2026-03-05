@@ -40,6 +40,7 @@ set updatetime=300
 set splitbelow
 set splitright
 {{- if eq .chezmoi.os "windows" }}
+set makeprg=nmake
 set shell=pwsh
 {{- end }}
 
