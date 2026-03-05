@@ -2,6 +2,9 @@ source {{ .chezmoi.homeDir }}/.config/nxvzbgbfben/shell/set_environment_variable
 source {{ .chezmoi.homeDir }}/.config/nxvzbgbfben/shell/set_aliases.sh
 
 setopt AUTO_PUSHD
+setopt CD_SILENT
+setopt PUSHD_IGNORE_DUPS
+
 setopt share_history
 setopt extended_history
 
