@@ -4,5 +4,3 @@ $Env:PATH = "$Env:BIN_HOME;$Env:PATH"
 Set-PSReadLineOption -BellStyle None -EditMode Vi
 
 Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete -ViMode Insert
-
-Invoke-Expression (&starship init powershell)
