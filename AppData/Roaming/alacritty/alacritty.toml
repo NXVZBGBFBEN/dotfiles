@@ -1,8 +1,8 @@
-[general]
-working_directory = "{{ .chezmoi.homeDir }}"
-
 [window]
 padding = { x = 3, y = 3 }
+
+[scrolling]
+multiplier = 1
 
 [font]
 normal = { family = "Myrica M" }
@@ -43,6 +43,4 @@ cyan = "0x56b6c2"
 white = "0xabb2bf"
 
 [terminal]
-{{- if eq .chezmoi.os "windows" }}
-shell = "pwsh"
-{{- end }}
+shell = { program = "pwsh", args = ["-WorkingDirectory", "~"] }
